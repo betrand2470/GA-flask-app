@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED True
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
-ENV PORT 8000
+ENV PORT 80
 # Install production dependencies.
 RUN pip install Flask gunicorn
 RUN pip install -r requirements.txt
